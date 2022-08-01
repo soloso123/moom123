@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: incert
+  name: onelve
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: incert
+      app: onelve
   template:
     metadata:
       labels:
-        app: incert
+        app: onelve
     spec:
       containers:
-      - image: okteto.dev/incert:latest
-        name: incert
+      - image: okteto.dev/onelve:latest
+        name: onelve
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "271c7384-4e4e-4c0a-b11a-62a2fa2c0142"
+          value: "bffa4b6f-e638-4491-9aba-acb50e9a5cd1"
         - name: Vless_Path
-          value: "/vl334466"
+          value: "/vl3666"
         - name: Vmess_UUID
-          value: "271c7384-4e4e-4c0a-b11a-62a2fa2c0142"
+          value: "bffa4b6f-e638-4491-9aba-acb50e9a5cd1"
         - name: Vmess_Path
-          value: "/vm778899"
+          value: "/vm778866"
         - name: Share_Path
           value: "/v2link"
